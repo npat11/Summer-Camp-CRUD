@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Admin GPA Results</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Admin GPA Results</h1>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>GPA</th>
+            </tr>
+            <% if (applicants.length > 0) { %>
+            <% applicants.forEach(applicant => { %>
+                <tr>
+                    <td><%= applicant.name %></td>
+                    <td><%= applicant.gpa %></td>
+                </tr>
+            <% }); %>
+        </table>
+    <% } %>
+
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+</html>

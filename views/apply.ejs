@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Application</h1>
+    <form action="/submitApplication" method="POST">
+        <strong>Name: </strong><input type="text" name="name"> 
+        <strong>Email Address: </strong><input type="email" name="email">
+        
+        <br>
+        
+        <strong>GPA: </strong><input type="number" step="any" name="gpa">
+        
+        <br><br>
+        
+        <strong>Background Information: </strong><textarea name="background" rows="6" cols="50"></textarea>
+        
+        <br>
+        
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit Application">
+    </form>
+   
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+</html>
